@@ -2,12 +2,14 @@ const myButton = document.querySelector("#mainButton")
 
 myButton.addEventListener('click', e => {
   console.log("Button pressed!")
-  sendApiRequest()
+  const searchBar = document.querySelector("input")
+  const userQuery = searchBar.value
+  sendApiRequest(userQuery)
 })
 
 // include specific signup instructions so that all students can get an API key
-function sendApiRequest() {
-    fetch("https://api.giphy.com/v1/gifs/search?api_key=JH4pXj01oKHBnReFNlbzCYHF8M60fmjb&q=Ryan+Gosling&limit=25&offset=0&rating=G&lang=en")
+function sendApiRequest(userQuery) {
+    fetch(`https://api.giphy.com/v1/gifs/search?api_key=JH4pXj01oKHBnReFNlbzCYHF8M60fmjb&q=${userQuery}&limit=25&offset=0&rating=G&lang=en`)
     .then(function(data) {
       return data.json()
     })
@@ -25,7 +27,7 @@ function getImageURLfrom(myJSON) {
   // Code this out on the whiteboard one level at a time.
   console.log(myJSON.data[0].images.original.url)
   // Save this in a variable, then pass it to the next function.
-  const imageURL = myJSON.data[0].images.original.url
+  const imageURL = myJSON.data[randomNumber].images.original.url
   console.log(imageURL)
   addImageToScreen(imageURL)
 }
