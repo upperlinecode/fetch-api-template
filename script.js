@@ -20,8 +20,6 @@ function sendApiRequest() {
 
 
 function getImageURLfrom(myJSON) {
-  // Maybe leave this code here as a breadcrumb.
-  const randomNumber = Math.floor(Math.random() * 26)
   // Code this out on the whiteboard one level at a time.
   console.log(myJSON.data[0].images.original.url)
   // Save this in a variable, then pass it to the next function.
