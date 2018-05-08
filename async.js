@@ -1,22 +1,16 @@
 // Code out an event listener for the button that logs "Button pressed!" to the console when it is clicked
+let button = document.querySelector('#mainButton');
+console.log(button);
 
+button.addEventListener('click', e => {
+  console.log("button pressed!");
+  sendApiRequest();
+});
 
 // Go to https://developers.giphy.com/ and create an account. Then create your first app called testApp to create an API key. Enter it below.
 function sendApiRequest() {
-    fetch("https://api.giphy.com/v1/gifs/search?api_key=YOUR_API_KEY_GOES_HERE&q=Ryan+Gosling&limit=25&offset=0&rating=G&lang=en")
-    .then(function(data) {
-      return data.json();
-    })
-    .then(function(json) {
-      console.log(json);
-      // Pass the JSON on to the next function.
-
-    });
-};
-
-// Get a specific image URL ending in .gif from your JSON search results. Pass it on to the next function.
-function getImageURLfrom(myJSON) {
-
+  let promise = fetch("https://api.giphy.com/v1/gifs/search?api_key=YOUR_API_KEY_GOES_HERE&q=Ryan+Gosling&limit=25&offset=0&rating=G&lang=en");
+  console.log(promise);
 };
 
 // querySelect the wrapper, and add an image tag to it. Interpolate the URL string from the previous function.
