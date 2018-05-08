@@ -1,11 +1,5 @@
 // Code out an event listener for the button that logs "Button pressed!" to the console when it is clicked
-let button = document.querySelector('#mainButton');
-console.log(button);
 
-button.addEventListener('click', e => {
-  console.log("button pressed!");
-  sendApiRequest();
-});
 
 // Go to https://developers.giphy.com/ and create an account. Then create your first app called testApp to create an API key. Enter it below.
 function sendApiRequest() {
