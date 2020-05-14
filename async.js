@@ -12,7 +12,7 @@ myButton.addEventListener('click', e => {
 })
 
 
-const YOUR_API_KEY_HERE = 'C2SBfTzTGJ0li12LghpdS1iABIKm0ZI4'
+const YOUR_API_KEY_HERE = ''
 
 // Go to https://developers.giphy.com/ and create an account. Then create your first app called testApp to create an API key. Enter it below.
 async function sendApiRequest(userQuery) {
