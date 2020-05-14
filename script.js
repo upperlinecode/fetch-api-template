@@ -1,9 +1,12 @@
+// This variation of this lesson is not in use for our 2020 programs.
+
+
 // Code out an event listener for the button that logs "Button pressed!" to the console when it is clicked
 
 
 // Go to https://developers.giphy.com/ and create an account. Then create your first app called testApp to create an API key. Enter it below.
 function sendApiRequest() {
-    fetch("https://api.giphy.com/v1/gifs/search?api_key=YOUR_API_KEY_GOES_HERE&q=Ryan+Gosling&limit=25&offset=0&rating=G&lang=en")
+    fetch("https://api.giphy.com/v1/gifs/search?api_key=YOUR_API_KEY_HERE&q=Ryan+Gosling&limit=25&offset=0&rating=G&lang=en")
     .then(function(data) {
       return data.json();
     })
