@@ -1,4 +1,6 @@
 // This variation of this lesson is not in use for our 2020 programs.
+// Please use the script in the file named async.js instead.
+
 
 
 // Code out an event listener for the button that logs "Button pressed!" to the console when it is clicked
