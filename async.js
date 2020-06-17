@@ -1,6 +1,11 @@
 // Console log any message to prove that this file is linked correctly.
 
+
+// Select the button and the text field, and store them both in constants here. 
+
+
 // Code out an event listener for the button that logs "Button pressed!" to the console when it is clicked
+
 
 
 const YOUR_API_KEY_HERE = 'Replace this string with your API key'
