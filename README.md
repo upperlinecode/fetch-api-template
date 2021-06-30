@@ -1,5 +1,7 @@
 # Fetch API Template
 
+[![Run on Repl.it](https://repl.it/badge/github/upperlinecode/fetch-api-template)](https://repl.it/github/upperlinecode/fetch-api-template)
+
 The goal is to code out a gif-finder that takes in a user's keyword and sends you back the gifs that meet that criteria.
 
 ## Warm up!
